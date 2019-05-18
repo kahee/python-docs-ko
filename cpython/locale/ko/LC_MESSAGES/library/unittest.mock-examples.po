@@ -856,7 +856,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:746
 msgid "Coping with mutable arguments"
-msgstr ""
+msgstr "가변 인자 복사하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:748
 msgid ""
@@ -866,18 +866,24 @@ msgid ""
 "under test then you can no longer make assertions about what the values "
 "were when the mock was called."
 msgstr ""
+"이러한 상환은 드물지만, mock이 가변 인자로 호출 될 때 발생 할 수도 있습니다. "
+"``call_args`` 그리고 ``call_args_list`` 는 인자에 대한 *참조*\\를 저장합니다. "
+"인자가 테스트 중인 코드에 의해 변경되면, 더 이상 mock이 호출 되었을 때 값에 대한 어서션을 만들 수 없습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:753
 msgid ""
 "Here's some example code that shows the problem. Imagine the following "
 "functions defined in 'mymodule'::"
 msgstr ""
+"이러한 문제를 보여주는 몇 가지 예제 코드가 있습니다. "
+"'mymodule': 에 정의 된 다음 함수를 상상해보십시오.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:764
 msgid ""
 "When we try to test that ``grob`` calls ``frob`` with the correct "
 "argument look what happens:"
 msgstr ""
+"우리가 ``grob`` 호출을 테스트하려고 할 때, 올바른 인자를 가진 ``frob``\\는 어떻게 되는지 보여줍니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:779
 msgid ""
@@ -885,6 +891,8 @@ msgid ""
 " could then cause problems if you do assertions that rely on object "
 "identity for equality."
 msgstr ""
+"하나의 가능성은 우리가 전달한 어서션을 mock이 복사하는 것입니다. "
+"만약 동등성을 위해 객체의 동일성에 의존하는 어서션을 수행하면 문제가 발생 할 수도 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:783
 msgid ""
@@ -896,6 +904,11 @@ msgid ""
 "can use the mock methods for doing the assertion. Again a helper function"
 " sets this up for me."
 msgstr ""
+":attr:`side_effect` 기능을 사용하는 한 가지 해결책이 있습니다. "
+"만약 mock 에 ``side_effect`` 함수를 제공하면, ``side_effect`` 는 mock 객체와 동일한 args로 호출됩니다. "
+"이것은 인자를 복사하고 나중에 어서션을 위해 저장할 수 있는 기회를 줍니다. "
+"이 예제에서 인자를 저장하기 위해 *또 다른* mock을 사용하고 있기 때문에, 어서션을 하기 위해 mock 메서드를 사용 할 수 있습니다. "
+"다시 한 번 도우미 함수가 이것을 설정합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:812
 msgid ""
@@ -904,6 +917,9 @@ msgid ""
 "function makes a copy of the args and calls our ``new_mock`` with the "
 "copy."
 msgstr ""
+"``copy_call_args`` mock이 호출 될 때 호출됩니다. "
+"이것은 우리가 어서션할 새로운 mock을 반환합니다. "
+"``side_effect`` 함수는 args 의 사본을 만들고 ``new_mock``을 사본으로 호출합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:818
 msgid ""
@@ -911,6 +927,8 @@ msgid ""
 "checking arguments at the point they are called. You can simply do the "
 "checking inside a ``side_effect`` function."
 msgstr ""
+"mock을 한 번 사용하게 되면, 인자가 호출 되는 시점에서 인자를 확인하는 더 쉬운 방법이 있습니다. "
+"``side_effect` 함수 내에서 간단히 검사를 할 수 있습니다. "
 
 #: ../Doc/library/unittest.mock-examples.rst:832
 msgid ""
@@ -918,6 +936,9 @@ msgid ""
 ":class:`MagicMock` that copies (using :func:`copy.deepcopy`) the "
 "arguments. Here's an example implementation:"
 msgstr ""
+"또 다른 방법은 인자를 (:func:`copy.deepcopy`를 사용한) 복사하여 "
+":class:`Mock` 또는 :class:`MagicMock` 의 하위 클래스를 만드는 것입니다. "
+"다음은 구현 예시입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:856
 msgid ""
@@ -926,6 +947,9 @@ msgid ""
 "automatically. That means all children of a ``CopyingMock`` will also "
 "have the type ``CopyingMock``."
 msgstr ""
+"``Mock`` 또는 ``MagicMock`` 를 서브 클래스로 만들 때, 동적으로 생성된 모든 속성이 있고, "
+"``return_value`` 는 서브 클래스를 자동으로 사용합니다. "
+"``CopyingMock`` 의 모든 자식들은 ``CopyingMock`` 을 가지고 있다는 의미힙니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:862
 msgid "Nesting Patches"
