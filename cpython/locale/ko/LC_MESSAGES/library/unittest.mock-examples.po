@@ -1108,7 +1108,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:1048
 msgid "Mocking imports with patch.dict"
-msgstr ""
+msgstr "patch.dict 임포트 Mocking"
 
 #: ../Doc/library/unittest.mock-examples.rst:1050
 msgid ""
@@ -1116,6 +1116,8 @@ msgid ""
 "inside a function. These are harder to mock because they aren't using an "
 "object from the module namespace that we can patch out."
 msgstr ""
+"mock이 어려울 수 있는 한 가지 경우는 함수 내에 로컬 임포트가 있는 경우입니다. "
+"우리가 패치 할 수있는 모듈 네임스페이스의 객체를 사용하지 않기 때문에, mock 하기가 더 어렵습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1054
 msgid ""
@@ -1126,6 +1128,11 @@ msgid ""
 "than an unconditional local import (store the module as a class or module"
 " attribute and only do the import on first use)."
 msgstr ""
+"일반적으로 로컬 임포트는 피해야 합니다. 순환적 종속성을 종종 방지하기 위해 수행됩니다. "
+"이 문제는 *일반적으로* 문제를 해결하거나 (코드를 리팩토링하는) 임포트를 지연시켜 \"최대 비용\"을 방지하는 "
+"훨씬 좋은 방법이 있습니다. "
+"이는 무조건 로컬 임포트 (모듈을 클래스 또는 모듈 속성으로 저장하고, 처음 사용할때 만 임포트)를 하는 것 보다 "
+"더 나은 방법으로 해결할 수도 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1061
 msgid ""
@@ -1136,6 +1143,12 @@ msgid ""
 "put in `sys.modules`, so usually when you import something you get a "
 "module back. This need not be the case however."
 msgstr ""
+"그 외에도 ``mock`` 를 사용하여 임포트 결과에 영향을 주는 방법도 있습니다. "
+"임포팅은 :data:`sys.modules` 딕셔너리로부터 *객체*\\를 패치합니다. "
+"모듈이 될 필요 없는 *객체*\\를 가져오는 것을 주의합시다. "
+"모듈을 처음으로 임포팅하면 모듈 객체가 `sys.modules` 에 저장되어, "
+"보통 무언가를 임포트 할때 모듈을 되찾습니다. 그러나 그럴 필요는 없습니다."
+
 
 #: ../Doc/library/unittest.mock-examples.rst:1068
 msgid ""
@@ -1145,24 +1158,30 @@ msgid ""
 "exits, the with statement body is complete or ``patcher.stop()`` is "
 "called) then whatever was there previously will be restored safely."
 msgstr ""
+"즉 :func:`patch.dict` 를 사용하여 *일시적으로* mock 을 :data:`sys.modules` 에 배치합니다. "
+"이 패치가 임포트 되어있는 동안, mock 을 가져옵니다. "
+"패치가 완료되면 (데코레이팅 된 함수가 종료되면, with 문이 완전히 완료되거나 ``patcher.stop()`` 이 호출 됩니다.) "
+"이전 무엇이 있든 안전하게 복원 될 것입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1074
 msgid "Here's an example that mocks out the 'fooble' module."
-msgstr ""
+msgstr "다음은 'fooble' 모듈을 목아웃하는 예제입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1085
 msgid ""
 "As you can see the ``import fooble`` succeeds, but on exit there is no "
 "'fooble' left in :data:`sys.modules`."
 msgstr ""
+"``import fooble`` 이 성공한 것을 볼 수 있지만, 종료될 때에는 :data:`sys.modules` 에 "
+"'fooble' 이 남아 있지 않습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1088
 msgid "This also works for the ``from module import name`` form:"
-msgstr ""
+msgstr "이것은 ``from module import name`` 형식에서도 작동합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1098
 msgid "With slightly more work you can also mock package imports:"
-msgstr ""
+msgstr "약간 더 많은 작업을 통해 패키지 임포트를 mock 할 수 있습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1111
 msgid "Tracking order of calls and less verbose call assertions"
