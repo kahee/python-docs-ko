@@ -3,7 +3,6 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
@@ -535,7 +534,7 @@ msgid ""
 "containing a given substring."
 msgstr ""
 "이터레이터의 출력에 대한 두 가지 일반적인 연산은 1) 모든 요소에 대해 어떤 연산을 수행하고, 2) 어떤 조건을 만족하는 요소의 "
-"부분 집합을 선택하는 것입니다. 예를 들어 문자열 리스트가 있으면 각 줄에서 후미 공백을 제거하거나, 주어진 서브 스트링을 포함하는"
+"부분 집합을 선택하는 것입니다. 예를 들어 문자열 리스트가 있으면 각 줄에서 후미 공백을 제거하거나, 주어진 부분 문자열을 포함하는"
 " 모든 문자열을 추출할 수 있습니다."
 
 #: ../Doc/howto/functional.rst:334
@@ -1463,7 +1462,6 @@ msgid ""
 msgstr "파이썬 내장 함수나 적당한 모듈 함수가 있다면, 새로운 함수를 정의할 필요가 전혀 없습니다::"
 
 #: ../Doc/howto/functional.rst:1110
-#, fuzzy
 msgid ""
 "If the function you need doesn't exist, you need to write it.  One way to"
 " write small functions is to use the :keyword:`lambda` expression.  "
@@ -1471,7 +1469,7 @@ msgid ""
 " parameters, and creates an anonymous function that returns the value of "
 "the expression::"
 msgstr ""
-"필요한 기능이 없다면 작성해야 합니다. 작은 함수를 작성하는 한 가지 방법은 :keyword:`lambda` 문을 사용하는 "
+"필요한 기능이 없다면 작성해야 합니다. 작은 함수를 작성하는 한 가지 방법은 :keyword:`lambda` 표현식을 사용하는 "
 "것입니다. ``lambda`` 는 여러 매개 변수와 이들 매개 변수를 결합하는 표현식을 취해 표현식의 값을 반환하는 익명의 함수를 "
 "만듭니다::"
 

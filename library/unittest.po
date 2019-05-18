@@ -3,12 +3,11 @@
 # This file is distributed under the same license as the Python package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, 2017.
 #
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 10:27+0900\n"
+"POT-Creation-Date: 2019-03-26 14:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Hyukhoon Kwon <unace2u@gmail.com>\n"
 "Language-Team: Korean (https://python.flowdas.com)\n"
@@ -132,12 +131,11 @@ msgid ""
 msgstr ":mod:`unittest`\\에 영향을 준 Kent Beck의 패턴을 사용한 테스트 프레임워크 원본 논문"
 
 #: ../Doc/library/unittest.rst:61
-#, fuzzy
 msgid ""
 "`Nose <https://nose.readthedocs.io/>`_ and `pytest "
 "<https://docs.pytest.org/>`_"
 msgstr ""
-"`Nose <https://nose.readthedocs.io/>`_\\와 `py.test "
+"`Nose <https://nose.readthedocs.io/>`_\\와 `pytest "
 "<https://docs.pytest.org/>`_"
 
 #: ../Doc/library/unittest.rst:60
@@ -367,7 +365,7 @@ msgid ""
 "This option may be used multiple times, in which case all test cases that"
 " match of the given patterns are included."
 msgstr ""
-"패턴이나 문자열 일부에 일치하는 테스트 메서드나 클래스만 실행합니다. 이 옵션은 여러 번 사용될 수 있습니다. 이 경우 주어진 "
+"패턴이나 부분 문자열과 일치하는 테스트 메서드나 클래스만 실행합니다. 이 옵션은 여러 번 사용될 수 있습니다. 이 경우 주어진 "
 "패턴과 일치하는 모든 테스트 케이스가 포함됩니다. "
 
 #: ../Doc/library/unittest.rst:228
@@ -834,12 +832,11 @@ msgid "Skip the decorated test unless *condition* is true."
 msgstr "*condition*\\이 참이 아니면 데코레이트된 테스트를 건너뜁니다."
 
 #: ../Doc/library/unittest.rst:588
-#, fuzzy
 msgid ""
 "Mark the test as an expected failure.  If the test fails it will be "
 "considered a success.  If the test passes, it will be considered a "
 "failure."
-msgstr "테스트가 예상된 실패라는 표시를 합니다. 만약 테스트가 실행 중에 실패하더라도 실패로 처리하지 않습니다."
+msgstr "테스트가 예상된 실패라는 표시를 합니다. 테스트가 실패하면 성공으로 간주합니다. 테스트에 통과하면 실패로 간주합니다."
 
 #: ../Doc/library/unittest.rst:593
 msgid "This exception is raised to skip a test."
@@ -870,13 +867,12 @@ msgid "Distinguishing test iterations using subtests"
 msgstr "부분 테스트(subtest)를 사용하여 테스트 반복 구별 짖기"
 
 #: ../Doc/library/unittest.rst:610
-#, fuzzy
 msgid ""
 "When there are very small differences among your tests, for instance some"
 " parameters, unittest allows you to distinguish them inside the body of a"
 " test method using the :meth:`~TestCase.subTest` context manager."
 msgstr ""
-"당신의 테스트 중 일부는 오직 매우 작은 부분, 예를 들어 몇몇 매개변수, 만 다를 수 있습니다. unittest는 "
+"여러분의 테스트들이 아주 작은 부분에서만 다를 때, 예를 들어 몇몇 매개변수, unittest는 "
 ":meth:`~TestCase.subTest` 컨텍스트 관리자를 사용하여 테스트 메서드의 바디 안에서 그것들은 구별 짖게 해줍니다."
 
 #: ../Doc/library/unittest.rst:614
@@ -964,7 +960,7 @@ msgid ""
 "an error rather than a test failure. The default implementation does "
 "nothing."
 msgstr ""
-"테스트 픽스쳐를 준비하기 위해 호출되는 메서드입니다. 이 메서드는 테스트 메서드를 호출하기 바로 직전에 호출됩니다; "
+"테스트 픽스쳐를 준비하기 위해 호출되는 메서드입니다. 이 메서드는 테스트 메서드를 호출하기 바로 직전에 호출됩니다; "
 ":exc:`AssertionError` 또는 :exc:`SkipTest`\\이외의 이 메서드에서 발생한 모든 예외는 테스트 실패가 "
 "아닌 오류로 간주합니다. 기본 구현은 아무것도 하지 않습니다."
 
@@ -1641,9 +1637,8 @@ msgstr ""
 "*delta*\\보다 작거나 같아야(또는 커야) 합니다."
 
 #: ../Doc/library/unittest.rst:1164
-#, fuzzy
 msgid "Supplying both *delta* and *places* raises a :exc:`TypeError`."
-msgstr "*delta*\\와 *places*\\가 동시에 주어지면 ``TypeError``\\가 발생합니다."
+msgstr "*delta*\\와 *places*\\가 동시에 주어지면 :exc:`TypeError`\\가 발생합니다."
 
 #: ../Doc/library/unittest.rst:1166
 msgid ""
@@ -1920,7 +1915,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.rst:1361
 msgid "The class setting gets reset before each test call."
-msgstr "이 클래스 설정은 각 테스트 호출 전에 재설정됩니다."
+msgstr "이 클래스 설정은 각 테스트 호출 전에 재설정됩니다."
 
 #: ../Doc/library/unittest.rst:1368
 msgid ""
@@ -2365,7 +2360,7 @@ msgid ""
 "run."
 msgstr ""
 "테스트를 로드하는 동안 발생한 치명적이지 않은(non-fatal) 에러 목록입니다. 어떤 시점에도 로더에 의해 재설정되지 않습니다."
-" 치명적인 에러는 예외를 발생시키는 관련 메서드에 의해 신호가 발생하여 호출자에게 전달됩니다. 치명적이지 않은 에러는 실행 시에 "
+" 치명적인 에러는 예외를 발생시키는 관련 메서드에 의해 신호가 발생하여 호출자에게 전달됩니다. 치명적이지 않은 에러는 실행 시에 "
 "원래 에러를 발생시킬 합성(synthetic) 테스트가 표시하기도 합니다."
 
 #: ../Doc/library/unittest.rst:1605
@@ -3033,12 +3028,12 @@ msgstr ""
 
 #: ../Doc/library/unittest.rst:2053
 msgid ""
-"This method is the main public interface to the `TextTestRunner`. This "
+"This method is the main public interface to the ``TextTestRunner``. This "
 "method takes a :class:`TestSuite` or :class:`TestCase` instance. A "
 ":class:`TestResult` is created by calling :func:`_makeResult` and the "
 "test(s) are run and the results printed to stdout."
 msgstr ""
-"이 메서드는 `TextTestRunner`\\의 주된 공개 인터페이스입니다. 이 메서드는 :class:`TestSuite`\\나 "
+"이 메서드는 ``TextTestRunner``\\의 주된 공개 인터페이스입니다. 이 메서드는 :class:`TestSuite`\\나 "
 ":class:`TestCase` 인스턴스를 받습니다. :class:`TestResult`\\는 "
 ":func:`_makeResult`\\를 호출하여 생성하고 테스트가 실행되며 결과가 stdout에 출력됩니다."
 

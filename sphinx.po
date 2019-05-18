@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 10:27+0900\n"
+"POT-Creation-Date: 2019-03-26 14:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Dong-gweon Oh <flowdas@gmail.com>\n"
 "Language-Team: Korean (https://python.flowdas.com)\n"
@@ -41,7 +41,7 @@ msgstr "버전 {deprecated}에서 폐지되었습니다, 버전 {removed}에서 
 #: ../Doc/tools/templates/indexcontent.html:8
 #, python-format
 msgid "Welcome! This is the documentation for Python %(release)s."
-msgstr "환영합니다! 파이썬 %(release)s 설명서의 한국어 번역입니다. (진행률 28.7%%)"
+msgstr "환영합니다! 파이썬 %(release)s 설명서의 한국어 번역입니다."
 
 #: ../Doc/tools/templates/indexcontent.html:10
 msgid "Parts of the documentation:"
@@ -225,8 +225,8 @@ msgid "Python 3.7 (stable)"
 msgstr "파이썬 3.7 (안정판)"
 
 #: ../Doc/tools/templates/indexsidebar.html:7
-msgid "Python 3.6 (stable)"
-msgstr "파이썬 3.6 (안정판)"
+msgid "Python 3.6 (security-fixes)"
+msgstr "파이썬 3.6 (보안 수정)"
 
 #: ../Doc/tools/templates/indexsidebar.html:8
 msgid "Python 3.5 (security-fixes)"

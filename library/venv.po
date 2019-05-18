@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Python 3.6\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-12-25 10:27+0900\n"
+"POT-Creation-Date: 2019-03-26 14:46+0900\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Dong-gweon Oh <flowdas@gmail.com>\n"
 "Language-Team: Korean (https://python.flowdas.com)\n"
@@ -87,11 +87,11 @@ msgid ""
 "\\site-packages``). If an existing directory is specified, it will be re-"
 "used."
 msgstr ""
-"이 명령을 실행하면 대상 디렉터리가 만들어지고 (이미 존재하지 않는 부모 디렉터리도 만듭니다) 명령이 실행된 파이썬 설치를 가리키는 "
-"``home`` 키가 있는 ``pyvenv.cfg`` 파일이 배치됩니다. 또한 파이썬 바이너리/바이너리들의 사본/심볼릭 링크를 포함하는 "
-"``bin`` (또는 윈도우의 경우 ``Scripts``) 서브 디렉터리를 만듭니다 (플랫폼이나 환경 생성 시에 사용된 인자에 "
-"적절하게). 또한 (처음에는 비어있는) ``lib/pythonX.Y/site-packages`` (윈도우에서는, ``Lib\\site-"
-"packages``) 서브 디렉터리를 만듭니다. 기존 디렉터리가 지정되면 재사용됩니다."
+"이 명령을 실행하면 대상 디렉터리가 만들어지고 (이미 존재하지 않는 부모 디렉터리도 만듭니다) 명령이 실행된 파이썬 설치를 가리키는"
+" ``home`` 키가 있는 ``pyvenv.cfg`` 파일이 배치됩니다. 또한 파이썬 바이너리/바이너리들의 사본/심볼릭 링크를 "
+"포함하는 ``bin`` (또는 윈도우의 경우 ``Scripts``) 서브 디렉터리를 만듭니다 (플랫폼이나 환경 생성 시에 사용된 "
+"인자에 적절하게). 또한 (처음에는 비어있는) ``lib/pythonX.Y/site-packages`` (윈도우에서는, ``Lib"
+"\\site-packages``) 서브 디렉터리를 만듭니다. 기존 디렉터리가 지정되면 재사용됩니다."
 
 #: ../Doc/using/venv-create.inc
 #: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:16
@@ -134,7 +134,7 @@ msgid "The command, if run with ``-h``, will show the available options::"
 msgstr "명령에 ``-h``\\를 사용하면 사용 가능한 옵션이 표시됩니다::"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:65
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:67
 #: <included from
 msgid ""
 "Installs pip by default, added the ``--without-pip``  and ``--copies`` "
@@ -142,7 +142,7 @@ msgid ""
 msgstr "기본적으로 pip을 설치합니다. ``--without-pip`` 와 ``--copies`` 옵션을 추가했습니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:69
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:71
 #: <included from
 msgid ""
 "In earlier versions, if the target directory already existed, an error "
@@ -152,7 +152,18 @@ msgstr ""
 "에러가 발생했습니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:73
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:76
+#: <included from
+msgid ""
+"While symlinks are supported on Windows, they are not recommended. Of "
+"particular note is that double-clicking ``python.exe`` in File Explorer "
+"will resolve the symlink eagerly and ignore the virtual environment."
+msgstr ""
+"심볼릭 링크가 윈도우에서 지원되지만, 추천하지는 않습니다. 특히 파일 탐색기에서 ``python.exe``\\를 더블 클릭하면 심볼릭 "
+"링크를 열심히 따라가고(resolve) 가상 환경은 무시됩니다."
+
+#: ../Doc/using/venv-create.inc
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:80
 #: <included from
 msgid ""
 "The created ``pyvenv.cfg`` file also includes the ``include-system-site-"
@@ -164,7 +175,7 @@ msgstr ""
 "않으면 ``false``\\로 설정됩니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:77
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:84
 #: <included from
 msgid ""
 "Unless the ``--without-pip`` option is given, :mod:`ensurepip` will be "
@@ -174,7 +185,7 @@ msgstr ""
 ":mod:`ensurepip`\\가 호출됩니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:80
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:87
 #: <included from
 msgid ""
 "Multiple paths can be given to ``venv``, in which case an identical "
@@ -184,7 +195,7 @@ msgstr ""
 "``venv``\\에 여러 경로를 지정할 수 있습니다. 이때 지정된 옵션에 따라 제공된 각 경로에서 같은 가상 환경이 만들어집니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:84
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:91
 #: <included from
 msgid ""
 "Once a virtual environment has been created, it can be \"activated\" "
@@ -196,97 +207,97 @@ msgstr ""
 "호출은 플랫폼에 따라 다릅니다 (`<venv>`\\는 가상 환경을 포함하는 디렉터리의 경로로 대체되어야 합니다):"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:90
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:97
 #: <included from
 msgid "Platform"
 msgstr "플랫폼"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:90
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:97
 #: <included from
 msgid "Shell"
 msgstr "셸"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:90
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:97
 #: <included from
 msgid "Command to activate virtual environment"
 msgstr "가상 환경을 활성화하는 명령"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:92
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:99
 #: <included from
 msgid "Posix"
 msgstr "Posix"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:92
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:99
 #: <included from
 msgid "bash/zsh"
 msgstr "bash/zsh"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:92
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:99
 #: <included from
 msgid "$ source <venv>/bin/activate"
 msgstr "$ source <venv>/bin/activate"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:94
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:101
 #: <included from
 msgid "fish"
 msgstr "fish"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:94
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:101
 #: <included from
 msgid "$ . <venv>/bin/activate.fish"
 msgstr "$ . <venv>/bin/activate.fish"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:96
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:103
 #: <included from
 msgid "csh/tcsh"
 msgstr "csh/tcsh"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:96
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:103
 #: <included from
 msgid "$ source <venv>/bin/activate.csh"
 msgstr "$ source <venv>/bin/activate.csh"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:98
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:105
 #: <included from
 msgid "Windows"
 msgstr "윈도우"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:98
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:105
 #: <included from
 msgid "cmd.exe"
 msgstr "cmd.exe"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:98
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:105
 #: <included from
 msgid "C:\\\\> <venv>\\\\Scripts\\\\activate.bat"
 msgstr "C:\\\\> <venv>\\\\Scripts\\\\activate.bat"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:100
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:107
 #: <included from
 msgid "PowerShell"
 msgstr "PowerShell"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:100
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:107
 #: <included from
 msgid "PS C:\\\\> <venv>\\\\Scripts\\\\Activate.ps1"
 msgstr "PS C:\\\\> <venv>\\\\Scripts\\\\Activate.ps1"
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:103
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:110
 #: <included from
 msgid ""
 "You don't specifically *need* to activate an environment; activation just"
@@ -303,7 +314,7 @@ msgstr ""
 "사용하여 실행해야 합니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:110
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:117
 #: <included from
 msgid ""
 "You can deactivate a virtual environment by typing \"deactivate\" in your"
@@ -318,7 +329,7 @@ msgstr ""
 "``deactivate.bat`` 와 ``Deactivate.ps1``\\이라는 별도의 스크립트가 있습니다."
 
 #: ../Doc/using/venv-create.inc
-#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:116
+#: /Users/flowdas/works/docsbuild-scripts/cpython/Doc/library/venv.rst>:123
 #: <included from
 msgid "``fish`` and ``csh`` activation scripts."
 msgstr "``fish`` 와 ``csh`` 활성화 스크립트."
@@ -445,13 +456,10 @@ msgstr "``clear`` -- 참이면, 환경을 만들기 전에, 대상 디렉터리�
 #: ../Doc/library/venv.rst:116
 msgid ""
 "``symlinks`` -- a Boolean value indicating whether to attempt to symlink "
-"the Python binary (and any necessary DLLs or other binaries, e.g. "
-"``pythonw.exe``), rather than copying."
-msgstr ""
-"``symlinks`` -- 파이썬 바이너리(및 필요한 DLL이나 다른 바이너리, 예를 들어 ``pythonw.exe``)를 "
-"복사하는 대신 심볼릭 링크하려고 시도할지를 나타내는 논릿값입니다."
+"the Python binary rather than copying."
+msgstr "``symlinks`` -- 파이썬 바이너리를 복사하는 대신 심볼릭 링크하려고 시도할지를 나타내는 논릿값입니다."
 
-#: ../Doc/library/venv.rst:120
+#: ../Doc/library/venv.rst:119
 msgid ""
 "``upgrade`` -- a Boolean value which, if true, will upgrade an existing "
 "environment with the running Python - for use when that Python has been "
@@ -460,7 +468,7 @@ msgstr ""
 "``upgrade`` -- 참이면 실행 중인 파이썬으로 기존 환경을 업그레이드하도록 하는 논릿값 - 파이썬이 그 자리에서 "
 "업그레이드되었을 때 사용됩니다 (기본값은 ``False``)."
 
-#: ../Doc/library/venv.rst:124
+#: ../Doc/library/venv.rst:123
 msgid ""
 "``with_pip`` -- a Boolean value which, if true, ensures pip is installed "
 "in the virtual environment. This uses :mod:`ensurepip` with the "
@@ -469,7 +477,7 @@ msgstr ""
 "``with_pip`` -- 참이면 가상 환경에 pip이 설치되도록 하는 논릿값입니다. ``--default-pip`` 옵션과 함께"
 " :mod:`ensurepip`\\를 사용합니다."
 
-#: ../Doc/library/venv.rst:128
+#: ../Doc/library/venv.rst:127
 msgid ""
 "``prompt`` -- a String to be used after virtual environment is activated "
 "(defaults to ``None`` which means directory name of the environment would"
@@ -478,25 +486,25 @@ msgstr ""
 "``prompt`` -- 가상 환경이 활성화된 후 사용할 문자열입니다 (기본값은 환경의 디렉터리 이름이 사용됨을 뜻하는 "
 "``None``\\입니다)."
 
-#: ../Doc/library/venv.rst:132 ../Doc/library/venv.rst:243
+#: ../Doc/library/venv.rst:131 ../Doc/library/venv.rst:247
 msgid "Added the ``with_pip`` parameter"
 msgstr "``with_pip`` 매개 변수 추가"
 
-#: ../Doc/library/venv.rst:135
+#: ../Doc/library/venv.rst:134
 msgid "Added the ``prompt`` parameter"
 msgstr "``prompt`` 매개 변수 추가"
 
-#: ../Doc/library/venv.rst:138
+#: ../Doc/library/venv.rst:137
 msgid ""
 "Creators of third-party virtual environment tools will be free to use the"
 " provided ``EnvBuilder`` class as a base class."
 msgstr "제삼자 가상 환경 도구 제작자는 제공된 ``EnvBuilder`` 클래스를 베이스 클래스로 자유롭게 사용할 수 있습니다."
 
-#: ../Doc/library/venv.rst:141
+#: ../Doc/library/venv.rst:140
 msgid "The returned env-builder is an object which has a method, ``create``:"
 msgstr "반환된 객체에는 메서드 ``create``\\가 있습니다:"
 
-#: ../Doc/library/venv.rst:145
+#: ../Doc/library/venv.rst:144
 msgid ""
 "This method takes as required argument the path (absolute or relative to "
 "the current directory) of the target directory which is to contain the "
@@ -507,13 +515,13 @@ msgstr ""
 "이 메서드는 가상 환경을 담을 대상 디렉터리의 경로(절대 또는 현재 디렉터리에 대한 상대)를 필수 인자로 취합니다. "
 "``create`` 메서드는 지정된 디렉터리에 환경을 만들거나 적절한 예외를 발생시킵니다."
 
-#: ../Doc/library/venv.rst:151
+#: ../Doc/library/venv.rst:150
 msgid ""
 "The ``create`` method of the ``EnvBuilder`` class illustrates the hooks "
 "available for subclass customization::"
 msgstr "``EnvBuilder`` 클래스의 ``create`` 메서드는 서브 클래스가 사용자 정의할 수 있는 훅을 보여줍니다::"
 
-#: ../Doc/library/venv.rst:166
+#: ../Doc/library/venv.rst:165
 msgid ""
 "Each of the methods :meth:`ensure_directories`, "
 ":meth:`create_configuration`, :meth:`setup_python`, :meth:`setup_scripts`"
@@ -523,7 +531,7 @@ msgstr ""
 ":meth:`setup_python`, :meth:`setup_scripts` 및 :meth:`post_setup` 각각을 재정의할"
 " 수 있습니다."
 
-#: ../Doc/library/venv.rst:172
+#: ../Doc/library/venv.rst:171
 msgid ""
 "Creates the environment directory and all necessary directories, and "
 "returns a context object.  This is just a holder for attributes (such as "
@@ -535,44 +543,53 @@ msgstr ""
 "경로)를 담고 있을 뿐입니다. 기존 환경 디렉터리에 작동하도록 ``clear`` 나 ``upgrade``\\가 지정되어있는 한, "
 "디렉터리는 이미 존재할 수 있습니다."
 
-#: ../Doc/library/venv.rst:180
+#: ../Doc/library/venv.rst:179
 msgid "Creates the ``pyvenv.cfg`` configuration file in the environment."
 msgstr "환경에 ``pyvenv.cfg`` 구성 파일을 만듭니다."
 
-#: ../Doc/library/venv.rst:184
+#: ../Doc/library/venv.rst:183
 msgid ""
-"Creates a copy of the Python executable in the environment on POSIX "
-"systems. If a specific executable ``python3.x`` was used, symlinks to "
-"``python`` and ``python3`` will be created pointing to that executable, "
-"unless files with those names already exist."
+"Creates a copy or symlink to the Python executable in the environment. On"
+" POSIX systems, if a specific executable ``python3.x`` was used, symlinks"
+" to ``python`` and ``python3`` will be created pointing to that "
+"executable, unless files with those names already exist."
 msgstr ""
-"POSIX 시스템에서 환경에 파이썬 실행 파일의 복사본을 만듭니다. 특정 실행 파일 ``python3.x``\\가 사용되면, 해당 이름의"
-" 파일이 이미 존재하지 않는 한 ``python`` 과 ``python3`` 심볼릭 링크가 해당 실행 파일을 가리키도록 만들어집니다."
+"환경에 파이썬 실행 파일의 복사본이나 심볼릭 링크를 만듭니다. POSIX 시스템에서, 특정 실행 파일 ``python3.x``\\가 "
+"사용되면, 해당 이름의 파일이 이미 존재하지 않는 한 ``python`` 과 ``python3`` 심볼릭 링크가 해당 실행 파일을 "
+"가리키도록 만들어집니다."
 
-#: ../Doc/library/venv.rst:191
+#: ../Doc/library/venv.rst:190
 msgid ""
 "Installs activation scripts appropriate to the platform into the virtual "
-"environment. On Windows, also installs the ``python[w].exe`` scripts."
-msgstr ""
-"플랫폼에 적합한 활성화 스크립트를 가상 환경에 설치합니다. 윈도우에서는, ``python[w].exe`` 스크립트도 설치합니다."
+"environment."
+msgstr "플랫폼에 적합한 활성화 스크립트를 가상 환경에 설치합니다."
 
-#: ../Doc/library/venv.rst:196
+#: ../Doc/library/venv.rst:195
 msgid ""
 "A placeholder method which can be overridden in third party "
 "implementations to pre-install packages in the virtual environment or "
 "perform other post-creation steps."
 msgstr "제삼자 구현에서 재정의하여 가상 환경에 패키지를 사전 설치하거나 다른 생성 후 단계를 수행할 수 있는 메서드입니다."
 
-#: ../Doc/library/venv.rst:200
+#: ../Doc/library/venv.rst:199
 msgid ""
 "Windows now uses redirector scripts for ``python[w].exe`` instead of "
-"copying the actual binaries, and so :meth:`setup_python` does nothing "
-"unless running from a build in the source tree."
+"copying the actual binaries. In 3.7.2 only :meth:`setup_python` does "
+"nothing unless running from a build in the source tree."
 msgstr ""
-"윈도우는 이제 실제 바이너리를 복사하는 대신 ``python[w].exe``\\를 위한 리디렉터 스크립트를 사용하므로, 소스 트리의 "
-"빌드에서 실행하지 않는 한 :meth:`setup_python`\\ 아무 작업도 수행하지 않습니다."
+"윈도우는 이제 실제 바이너리를 복사하는 대신 ``python[w].exe``\\를 위한 리디렉터 스크립트를 사용합니다. 3.7.2 "
+"에서만, 소스 트리의 빌드에서 실행하지 않는 한 :meth:`setup_python`\\ 아무 작업도 수행하지 않습니다."
 
-#: ../Doc/library/venv.rst:205
+#: ../Doc/library/venv.rst:204
+msgid ""
+"Windows copies the redirector scripts as part of :meth:`setup_python` "
+"instead of :meth:`setup_scripts`. This was not the case in 3.7.2. When "
+"using symlinks, the original executables will be linked."
+msgstr ""
+"윈도우는 :meth:`setup_scripts` 대신 :meth:`setup_python`\\의 일부로 리디렉터 스크립트를 복사합니다. "
+"이것은 3.7.2는 해당하지 않습니다. 심볼릭 링크를 사용하면, 원래 실행 파일이 링크됩니다."
+
+#: ../Doc/library/venv.rst:209
 msgid ""
 "In addition, :class:`EnvBuilder` provides this utility method that can be"
 " called from :meth:`setup_scripts` or :meth:`post_setup` in subclasses to"
@@ -581,7 +598,7 @@ msgstr ""
 "또한, :class:`EnvBuilder`\\는 가상 환경에 사용자 정의 스크립트를 설치하는 데 도움이 되는 유틸리티 메서드를 "
 "제공하는데, 서브 클래스의 :meth:`setup_scripts` 나 :meth:`post_setup`\\에서 호출할 수 있습니다."
 
-#: ../Doc/library/venv.rst:211
+#: ../Doc/library/venv.rst:215
 msgid ""
 "*path* is the path to a directory that should contain subdirectories "
 "\"common\", \"posix\", \"nt\", each containing scripts destined for the "
@@ -593,47 +610,47 @@ msgstr ""
 "디렉터리에는 환경의 bin 디렉터리로 들어갈 스크립트가 들어 있습니다. \"common\"과 :data:`os.name`\\에 "
 "해당하는 디렉터리의 내용은 자리 표시자의 일부 텍스트 치환 후 복사됩니다:"
 
-#: ../Doc/library/venv.rst:217
+#: ../Doc/library/venv.rst:221
 msgid ""
 "``__VENV_DIR__`` is replaced with the absolute path of the environment "
 "directory."
 msgstr "``__VENV_DIR__``\\은 환경 디렉터리의 절대 경로로 치환됩니다."
 
-#: ../Doc/library/venv.rst:220
+#: ../Doc/library/venv.rst:224
 msgid ""
 "``__VENV_NAME__`` is replaced with the environment name (final path "
 "segment of environment directory)."
 msgstr "``__VENV_NAME__``\\은 환경 이름(환경 디렉터리의 최종 경로 세그먼트)으로 치환됩니다."
 
-#: ../Doc/library/venv.rst:223
+#: ../Doc/library/venv.rst:227
 msgid ""
 "``__VENV_PROMPT__`` is replaced with the prompt (the environment name "
 "surrounded by parentheses and with a following space)"
 msgstr "``__VENV_PROMPT__``\\는 프롬프트(괄호로 묶인 환경 이름과 그 뒤의 스페이스)로 치환됩니다"
 
-#: ../Doc/library/venv.rst:226
+#: ../Doc/library/venv.rst:230
 msgid ""
 "``__VENV_BIN_NAME__`` is replaced with the name of the bin directory "
 "(either ``bin`` or ``Scripts``)."
 msgstr "``__VENV_BIN_NAME__``\\은 bin 디렉터리의 이름(``bin`` 이나 ``Scripts``)으로 치환됩니다."
 
-#: ../Doc/library/venv.rst:229
+#: ../Doc/library/venv.rst:233
 msgid ""
 "``__VENV_PYTHON__`` is replaced with the absolute path of the "
 "environment's executable."
 msgstr "``__VENV_PYTHON__``\\은 환경의 실행 파일의 절대 경로로 치환됩니다."
 
-#: ../Doc/library/venv.rst:232
+#: ../Doc/library/venv.rst:236
 msgid ""
 "The directories are allowed to exist (for when an existing environment is"
 " being upgraded)."
 msgstr "디렉터리는 존재하는 것이 허용됩니다 (기존 환경이 업그레이드될 때)."
 
-#: ../Doc/library/venv.rst:235
+#: ../Doc/library/venv.rst:239
 msgid "There is also a module-level convenience function:"
 msgstr "모듈 수준의 편리 함수도 있습니다:"
 
-#: ../Doc/library/venv.rst:240
+#: ../Doc/library/venv.rst:244
 msgid ""
 "Create an :class:`EnvBuilder` with the given keyword arguments, and call "
 "its :meth:`~EnvBuilder.create` method with the *env_dir* argument."
@@ -641,11 +658,11 @@ msgstr ""
 "주어진 키워드 인자로 :class:`EnvBuilder`\\를 만들고, *env_dir* 인자로 "
 ":meth:`~EnvBuilder.create` 메서드를 호출합니다."
 
-#: ../Doc/library/venv.rst:247
+#: ../Doc/library/venv.rst:251
 msgid "An example of extending ``EnvBuilder``"
 msgstr "``EnvBuilder`` 확장 예제"
 
-#: ../Doc/library/venv.rst:249
+#: ../Doc/library/venv.rst:253
 msgid ""
 "The following script shows how to extend :class:`EnvBuilder` by "
 "implementing a subclass which installs setuptools and pip into a created "
@@ -654,7 +671,7 @@ msgstr ""
 "다음 스크립트는 생성된 가상 환경에 setuptools 와 pip을 설치하는 서브 클래스를 구현하여 "
 ":class:`EnvBuilder`\\를 확장하는 방법을 보여줍니다::"
 
-#: ../Doc/library/venv.rst:468
+#: ../Doc/library/venv.rst:472
 msgid ""
 "This script is also available for download `online "
 "<https://gist.github.com/vsajip/4673395>`_."
