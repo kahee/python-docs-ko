@@ -1261,13 +1261,15 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:1191
 msgid "More complex argument matching"
-msgstr ""
+msgstr "조금 더 복잡한 인자 매칭하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:1193
 msgid ""
 "Using the same basic concept as :data:`ANY` we can implement matchers to "
 "do more complex assertions on objects used as arguments to mocks."
 msgstr ""
+":data:`ANY`\\와 같은 기본 개념을 사용하여, 우리는 mock에 인자로 사용되는 객체에 대해 좀 더 복잡한 "
+"어서션을 수행하는 matcher를 구현 할 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1196
 msgid ""
@@ -1278,28 +1280,35 @@ msgid ""
 "of the attributes of this object then we can create a matcher that will "
 "check these attributes for us."
 msgstr ""
+"어떤 객체가 mock 에 전달 되는 것을 예상한다고 가정해 봅시다. 이 객체는 기본적으로 객체 동일성 (사용자 정의 클래스에 대한 파이썬 기본값)을 "
+"바탕으로 동등을 비교합니다. "
+":meth:`~Mock.assert_called_with` 사용하려면, 같은 객체를 전달해야 합니다. "
+"이 객체의 일부만 관심이 있는 경우 이러한 속성을 확인하는 matcher를 만들 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1203
 msgid ""
 "You can see in this example how a 'standard' call to "
 "``assert_called_with`` isn't sufficient:"
 msgstr ""
+"이 예제에서 ``assert_called_with`` 에 대한 '표준' 호출이 충분하지 않다는 것을 볼 수 있습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1218
 msgid ""
 "A comparison function for our ``Foo`` class might look something like "
 "this:"
 msgstr ""
+"``Foo`` 클래스의 비교 함수는 다음과 같습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1230
 msgid ""
 "And a matcher object that can use comparison functions like this for its "
 "equality operation would look something like this:"
 msgstr ""
+"그리고 동등 연산을 위해 이와 같은 비교 함수를 사용할 수 있는 matcher 객체는 다음과 같습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1241
 msgid "Putting all this together:"
-msgstr ""
+msgstr "모든것을 하나로 모으기:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1246
 msgid ""
@@ -1310,12 +1319,17 @@ msgid ""
 "they match then ``assert_called_with`` passes, and if they don't an "
 ":exc:`AssertionError` is raised:"
 msgstr ""
+"``Matcher`` 는 비교 함수와 비교할 ``Foo`` 객체로 인스턴스화 됩니다. "
+"``assert_called_with`` 에서 ``Matcher`` 동등 메서드가 호출되어 mock 을 호출한 객체와"
+"우리가 만든 matcher 객체와 비교합니다 "
+"만약 일치하면 ``assert_called_with`` 가 통과되고, 그렇지 않으면 :exc:`AssertionError` 가 발생합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:1259
 msgid ""
 "With a bit of tweaking you could have the comparison function raise the "
 ":exc:`AssertionError` directly and provide a more useful failure message."
 msgstr ""
+"약간 수정하면 비교 함수가 :exc:`AssertionError` 를 직접 발생시키고, 유용한 실패 메시지를 제공 할 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1262
 msgid ""
@@ -1326,3 +1340,7 @@ msgid ""
 "<https://pyhamcrest.readthedocs.io/en/release-1.8/integration/#module-"
 "hamcrest.library.integration.match_equality>`_)."
 msgstr ""
+"파이썬 테스트 라이브러리 `PyHamcrest <https://pyhamcrest.readthedocs.io/>`_ 는 "
+"버전 1.5 부터 동등 matcher (`hamcrest.library.integration.match_equality "
+"<https://pyhamcrest.readthedocs.io/en/release-1.8/integration/#module-"
+"hamcrest.library.integration.match_equality>`_) 의 형태로 비슷한 기능을 제공합니다."
