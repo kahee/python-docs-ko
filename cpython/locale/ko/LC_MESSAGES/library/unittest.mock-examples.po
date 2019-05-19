@@ -301,6 +301,7 @@ msgstr ""
 "이 함수는 mock과 같은 인자로 호출됩니다. "
 "어떠한 함수 반환이든 간에 호출이 반환하는 것입니다.:"
 
+# TODO specification 논의
 #: ../Doc/library/unittest.mock-examples.rst:267
 msgid "Creating a Mock from an Existing Object"
 msgstr "기존 객체에서 mock 생성하기"
@@ -315,13 +316,11 @@ msgid ""
 "longer has ``some_method`` - then your tests will continue to pass even "
 "though your code is now broken!"
 msgstr ""
-"과도한 mocking 사용의 한 가지 문제점은 실제 코드가 아닌 mock로 구현된 테스트를 결합한다는 것입니다. "
-"``some_method`` 를 구현하는 클래스가 있다고 가정해 봅시다."
+"과도한 mocking 사용의 한 가지 문제점은 실제 코드가 아닌 mock으로 구현된 테스트를 결합한다는 것입니다. "
+"``some_method`` 를 구현하는 클래스가 있다고 가정해 봅시다. "
 "*또한* 이 객체의 mock이 제공하는 ``some_method`` 를  다른 클래스 테스트에서도 제공합니다."
-"나중에 첫번재 클래스를 리팩토링하여 ``some_method`` 가 없어졌습니다."
-"- 코드가 깨졌음에도 불구하고 테스트가 계속 통과될 것입니다."
+"나중에 첫 번째 클래스를 리팩토링하여 ``some_method`` 가 없어진 경우, 코드가 깨졌음에도 불구하고 테스트가 계속 통과될 것입니다."
 
-# TODO (2019. 5) specification : 정의
 #: ../Doc/library/unittest.mock-examples.rst:276
 msgid ""
 ":class:`Mock` allows you to provide an object as a specification for the "
@@ -331,9 +330,9 @@ msgid ""
 " your specification, then tests that use that class will start failing "
 "immediately without you having to instantiate the class in those tests."
 msgstr ""
-" :class:`Mock` 은 *spec* 키워드 인수를 사용하여 mock 객체를 정의 할 수 있게 합니다."
-"정의된 mock 객체에 존재하지 않는 메서드 / 속성에 접근하면, 속성 오류가 즉시 발생합니다."
-"만약 정의을 변경하면, 해당 클래스를 사용하는 테스트는 해당 테스트에서 클래스를 인스턴스화하지 않다도 즉시 실패합니다."
+":class:`Mock` 은 *spec* 키워드 인자를 사용하여 mock 객체를 정의할 수 있게 합니다. "
+"정의된 mock 객체에 존재하지 않는 메서드 / 속성에 접근하면, 속성 오류가 즉시 발생합니다. "
+"만약 정의을 변경하면, 해당 클래스를 사용하는 테스트는 해당 테스트에서 클래스를 인스턴스화하지 않고도 즉시 실패합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:289
 msgid ""
@@ -341,7 +340,7 @@ msgid ""
 "the mock, regardless of whether some parameters were passed as positional"
 " or named arguments::"
 msgstr ""
-"정의를 사용하면 일부 매개 변수가 위치 또는 이름있는 인자로 전달되었는지에 대한 여부와 관계없이"
+"정의를 사용하면 일부 매개 변수가 위치 인자 또는 이름있는 인자로 전달되었는지에 대한 여부와 관계없이 "
 "mock에 대한 호출을 좀 더 똑똑하게 일치시킬 수 있습니다.::"
 
 #: ../Doc/library/unittest.mock-examples.rst:300
@@ -349,8 +348,8 @@ msgid ""
 "If you want this smarter matching to also work with method calls on the "
 "mock, you can use :ref:`auto-speccing <auto-speccing>`."
 msgstr ""
-"만약 좀 더 똑독한 매칭을 mock 메서드 호출과 함께 사용하려면,"
-" :ref:`auto-speccing <auto-speccing>` 사용하면 됩니다."
+"만약 좀 더 똑똑한 매칭을 mock 메서드 호출과 함께 사용하려면, "
+":ref:`auto-speccing <auto-speccing>` 사용하면 됩니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:303
 msgid ""
@@ -358,10 +357,9 @@ msgid ""
 " arbitrary attributes as well as the getting of them then you can use "
 "*spec_set* instead of *spec*."
 msgstr ""
-"만약 임의의 속성을 설정하는 것뿐만 아니라 설정하지 못하게 하는 더 강력한 규격을 원한다면,"
-" *spec* 대신 *spec_set* 을 사용하면 됩니다."
+"만약 임의의 속성을 설정하는 것뿐만 아니라 설정하지 못하게 하는 더 강력한 규격을 원한다면, "
+"*spec* 대신 *spec_set* 을 사용하면 됩니다."
 
-#TODO (2019. 5. 17) 시작
 #: ../Doc/library/unittest.mock-examples.rst:310
 msgid "Patch Decorators"
 msgstr "데코레이터 패치하기"
