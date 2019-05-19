@@ -491,7 +491,7 @@ msgstr "조금 더 고급스러운 시나리오에 대한 몇 가지 예시가 �
 
 #: ../Doc/library/unittest.mock-examples.rst:451
 msgid "Mocking chained calls"
-msgstr "연결 된 호출 Mocking 하기"
+msgstr "연결 된 호출 Mocking"
 
 #: ../Doc/library/unittest.mock-examples.rst:453
 msgid ""
@@ -585,7 +585,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:522
 msgid "Partial mocking"
-msgstr "부분 mocking"
+msgstr "부분 Mocking"
 
 #: ../Doc/library/unittest.mock-examples.rst:524
 msgid ""
@@ -693,7 +693,7 @@ msgid ""
 "Here's an example class with an \"iter\" method implemented as a "
 "generator:"
 msgstr ""
-"다음은 \"iter\" 메서드가 제너레이터로 구현 된 예제 클래스 입니다."
+"다음은 \"iter\" 메서드가 제너레이터로 구현 된 예제 클래스 입니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:587
 msgid "How would we mock this class, and in particular its \"iter\" method?"
@@ -705,8 +705,8 @@ msgid ""
 " to :class:`list`), we need to configure the object returned by the call "
 "to ``foo.iter()``."
 msgstr ""
-"이터레이션 (암시적으론 :class:`list` 호출)에서 반환 된 값을 구성하기 위해선, "
-"``foo.iter()`` 를 호출하여 반환 된 객체를 구성해야합니다."
+"이터레이션 (암시적으론 :class:`list` 호출)에서 반환된 값을 구성하기 위해선, "
+"``foo.iter()`` 를 호출하여 반환된 객체를 구성해야 합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:597
 msgid ""
@@ -718,7 +718,7 @@ msgid ""
 msgstr ""
 "제너레이터의 표현식과 좀 더 `고급스러운 사용법 <http://www.dabeaz.com/coroutines/index.html>`_ "
 "은 여기에서는 언급하지 않겠습니다. 제너레이터에 대한 매우 훌륭한 입문서와 발전 방법은: "
-"`Generator Tricks for Systems Programmers <http://www.dabeaz.com/generators/>`_."
+"`Generator Tricks for Systems Programmers <http://www.dabeaz.com/generators/>`_ 를 참고하세요."
 
 
 #: ../Doc/library/unittest.mock-examples.rst:605
