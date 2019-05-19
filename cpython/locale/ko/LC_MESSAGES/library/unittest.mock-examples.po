@@ -31,7 +31,7 @@ msgstr "Mock Patching 메서드"
 
 #: ../Doc/library/unittest.mock-examples.rst:18
 msgid "Common uses for :class:`Mock` objects include:"
-msgstr ":class:`Mock` 객체의 일반적인 용도는 다음과 같습니다.:"
+msgstr ":class:`Mock` 객체의 일반적인 사용은 다음과 같습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:20
 msgid "Patching methods"
@@ -46,7 +46,7 @@ msgid ""
 "You might want to replace a method on an object to check that it is "
 "called with the correct arguments by another part of the system:"
 msgstr ""
-"객체의 메서드를 대체하여 시스템의 다른부분에서 올바른 인수로 호출되었는지 확인 할 수 있습니다.:"
+"객체의 메서드를 대체하여 시스템의 다른 부분에서 올바른 인수로 호출되었는지 확인할 수 있습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:31
 msgid ""
@@ -54,7 +54,7 @@ msgid ""
 "methods and attributes that allow you to make assertions about how it has"
 " been used."
 msgstr ""
-"우선 mock을 사용하면 (이 예제의 ``real.method``) 메서드와 속성이 어떻게 사용되었는지에 대해 주장할 수 있습니다. "
+"우선 mock (이 예제의 ``real.method``)을 사용하면 메서드와 속성이 어떻게 사용되었는지에 대해 어써션 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:36
 msgid ""
@@ -62,8 +62,8 @@ msgid ""
 "classes are interchangeable. As the ``MagicMock`` is the more capable "
 "class it makes a sensible one to use by default."
 msgstr ""
-"대부분의 예제에서 :class:`Mock`과 :class:`MagicMock` 클래스들은 서로 바꿔 사용 할 수 있습니다."
-"``MagicMock`은 좀 더 유능한 클래스이므로, 기본으로 사용하기에 합리적입니다."
+"대부분의 예제에서 :class:`Mock` 과 :class:`MagicMock` 클래스들은 서로 바꿔 사용할 수 있습니다. "
+"``MagicMock`` 은 좀 더 유능한 클래스이므로, 기본으로 사용할 수 있는 합리적인 클래스입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:40
 msgid ""
@@ -72,16 +72,17 @@ msgid ""
 ":meth:`~Mock.assert_called_with` or :meth:`~Mock.assert_called_once_with` "
 " method to check that it was called with the correct arguments."
 msgstr ""
-"mock을 호출하면 :attr:`~Mock.called` 속성은 ``True``로 설정됩니다."
-"더 중요한 건, 우리는 :meth:`~Mock.assert_called_with` 또는 :meth:`~Mock.assert_called_once_with` "
-"메서드를 사용하여 올바른 인자로 호출되었는지 확인 할 수 있습니다."
+"mock이 호출되면 :attr:`~Mock.called` 속성은 ``True`` 로 설정됩니다. "
+"더 중요한 건, :meth:`~Mock.assert_called_with` 또는 :meth:`~Mock.assert_called_once_with` "
+"메서드를 사용하여 올바른 인자로 호출되었는지 확인할 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:45
 msgid ""
 "This example tests that calling ``ProductionClass().method`` results in a"
 " call to the ``something`` method:"
 msgstr ""
-"이 예제는 ``ProductionClass().method`` 를 호출하여 ``something`` 메서드를 호출하는지 테스트합니다.:"
+"이 예제는 ``ProductionClass().method`` 를 호출하면, "
+"``something`` 메서드를 호출하는지 테스트합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:62
 msgid "Mock for Method Calls on an Object"
