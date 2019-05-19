@@ -131,6 +131,7 @@ msgid "Mocking Classes"
 msgstr "Mocking 클래스"
 
 # TODO (2019. 5) mock out, mocked 해석 어색
+# https://en.wiktionary.org/wiki/mock_out
 #: ../Doc/library/unittest.mock-examples.rst:94
 msgid ""
 "A common use case is to mock out classes instantiated by your code under "
@@ -138,10 +139,10 @@ msgid ""
 "Instances are created by *calling the class*. This means you access the "
 "\"mock instance\" by looking at the return value of the mocked class."
 msgstr ""
-"일반적인 사용 사례는 테스트중인 코드에서 인스턴스화된 클래스를 mock으로 대체하는 것입니다."
-"클래스를 패치할 때, 그 클래스는 mock으로 대체됩니다."
-"인스턴스는 *클래스를 호출* 하여 생성됩니다."
-"대체된 클래스의 반환 값을 보고 \"mock 인스턴스\" 에 접근한다는 것을 의미합니다."
+"일반적인 사용 사례는 테스트 중인 코드에서 인스턴스화된 클래스를 mock으로 대체하는 것입니다. "
+"클래스를 패치할 때, 그 클래스는 mock으로 대체됩니다. "
+"인스턴스는 *클래스를 호출* 하여 생성됩니다. "
+"즉, mock된 클래스의 반환 값을 보고 \"mock 인스턴스\" 에 접근한다는 것을 의미합니다."
 
 #: ../Doc/library/unittest.`mock-examples.rst:99
 msgid ""
@@ -151,8 +152,8 @@ msgid ""
 "result of calling the mock, so it is configured by modifying the mock "
 ":attr:`~Mock.return_value`."
 msgstr ""
-"아래 예제에서, ``Foo`` 를 인스턴스화하고 이를 호출하는 메서드를 가진 ``some_function`` 함수가 있습니다."
-" :func:`patch` 호출하면, 클래스 ``Foo`` 가 mock 객체로 대체됩니다."
+"아래 예제에서, ``Foo`` 를 인스턴스화하고 메서드를 호출하는 ``some_function`` 함수가 있습니다. "
+":func:`patch` 를 호출하면, 클래스 ``Foo`` 가 mock으로 대체됩니다. "
 "``Foo`` 인스턴스는 mock을 호출한 결과로서 mock의 :attr:`~Mock.return_value` 를 수정하여 구성됩니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:116
