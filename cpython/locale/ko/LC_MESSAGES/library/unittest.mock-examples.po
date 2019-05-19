@@ -233,7 +233,6 @@ msgstr "반환 값은 생성자에서도 설정할 수 있습니다."
 msgid "If you need an attribute setting on your mock, just do it:"
 msgstr "만약 mock에서 속성 설정이 필요한 경우, 바로 설정하시면 됩니다."
 
-# TODO (2019. 5) mockup
 #: ../Doc/library/unittest.mock-examples.rst:196
 msgid ""
 "Sometimes you want to mock up a more complex situation, like for example "
@@ -242,25 +241,23 @@ msgid ""
 " call."
 msgstr ""
 "``mock.connection.cursor().execute(\"SELECT 1\")`` 같은 예제처럼 "
-"때로는 좀 더 복잡한 상황을 목업(mockup)하고 싶을 때가 있습니다. "
-"만약 이 호출을 리스트로 반환하려면, 중첩 호출의 결과를 구성해야합니다."
+"때로는 좀 더 복잡한 상황을 목업(mockup) 하고 싶을 때가 있습니다. "
+"만약 이 호출을 리스트로 반환하려면, 중첩 호출의 결과를 구성해야 합니다."
 
-# TODO (2019. 5) assertion
 #: ../Doc/library/unittest.mock-examples.rst:200
 msgid ""
 "We can use :data:`call` to construct the set of calls in a \"chained "
 "call\" like this for easy assertion afterwards:"
 msgstr ""
-":data:`call` 를 사용하여 나중에 쉽게 assertion 하기위해, "
-"\"연결 된 호출\" 에서 호출 집합을 구성 할 수 있습니다."
+":data:`call` 를 사용하여 나중에 쉽게 어써션하기위해, "
+"\"연결된 호출\" 에서 호출 집합을 구성할 수 있습니다."
 
-# TODO (2019. 5) call 호출이라고 하는게 맞는가? 콜이라고 하는게 낫나?
 #: ../Doc/library/unittest.mock-examples.rst:214
 msgid ""
 "It is the call to ``.call_list()`` that turns our call object into a list"
 " of calls representing the chained calls."
 msgstr ""
-" ``.call_list()``를 호출하여 연결 된 호출을 나타내는 호출 리스트를 가진 호출 객체로 바뀝니다."
+"``.call_list()`` 를 호출하면, 호출 객체가 연결된 호출을 나타내는 호출 리스트로 바뀝니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:219
 msgid "Raising exceptions with mocks"
