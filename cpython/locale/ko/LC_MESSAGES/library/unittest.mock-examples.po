@@ -86,7 +86,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:62
 msgid "Mock for Method Calls on an Object"
-msgstr "객체에 대한 메서드 호출 Mock"
+msgstr "객체에 대한 메서드 호출 Mock하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:64
 msgid ""
@@ -96,8 +96,8 @@ msgid ""
 "check that it is used in the correct way."
 msgstr ""
 "지난 예제에서 우리는 객체에 대한 메서드를 직접 패치하여 올바르게 호출되었는지 확인했습니다. "
-"또 다른 일반적인 사용 사례는 메서드(혹은 시스템 일부의 테스트)에 객체를 전달한 다음, "
-"올바른 방법으로 전달된 객체가 사용되는지 확인하는 것입니다."
+"또 다른 일반적인 사용 사례는 메서드 (혹은 시스템 일부의 테스트)에 객체를 전달한 다음, "
+"올바른 방법으로 사용되는지 확인하는 것입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:69
 msgid ""
@@ -112,7 +112,7 @@ msgid ""
 "So to test it we need to pass in an object with a ``close`` method and "
 "check that it was called correctly."
 msgstr ""
-"따라서 함께 호출 된것을 테스트하기 위해선 ``close`` 메서드를 사용하여 객체를 전달하고 "
+"따라서 이를 테스트하기 위해선 ``close`` 메서드를 사용하여 객체를 전달하고 "
 "올바르게 호출되었는지 확인해야 합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:85
@@ -123,8 +123,8 @@ msgid ""
 ":meth:`~Mock.assert_called_with` will raise a failure exception."
 msgstr ""
 "우리는 mock에 'close' 메서드를 제공하기 위해 어떠한 노력도 하지 않아도 됩니다. "
-"close에 접근하면, 해당 메서드가 생성됩니다. 따라서 만약 'close'가 아직 호출되지 않았다면, "
-"테스트에서 이것을 생성하기 위해 접근하면, :meth:`~Mock.assert_called_with` 는 실패 예외가 발생됩니다."
+"close에 접근하면, 해당 메서드가 생성됩니다. 따라서 'close'가 아직 호출되지 않았다면, "
+"테스트에서 접근하면 생성되지만, :meth:`~Mock.assert_called_with` 는 실패 예외를 발생시킵니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:92
 msgid "Mocking Classes"
