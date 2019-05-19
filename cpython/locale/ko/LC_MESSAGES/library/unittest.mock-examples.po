@@ -158,7 +158,7 @@ msgstr ""
 
 #: ../Doc/library/unittest.mock-examples.rst:116
 msgid "Naming your mocks"
-msgstr "mocks 이름 짓기"
+msgstr "mock 이름 짓기"
 
 #: ../Doc/library/unittest.mock-examples.rst:118
 msgid ""
@@ -167,13 +167,13 @@ msgid ""
 "messages. The name is also propagated to attributes or methods of the "
 "mock:"
 msgstr ""
-"mock에 이름을 짓는 것은 유용 할 수 있습니다. 이름은 mock의 repr에 표시되며"
-"테스트 실패 메시지에 mock이 표시될 때 도움이 될 수 있습니다."
-"또한 이름은 mock의 속성이나 메서드에도 전달됩니다."
+"mock 이름을 붙이는 것은 유용할 수 있습니다. 이름은 mock의 repr에 표시되며 "
+"테스트 실패 메시지에 mock이 표시될 때 도움이 될 수 있습니다. "
+"또한 이름은 mock의 속성이나 메서드에도 전달됩니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:130
 msgid "Tracking all Calls"
-msgstr "모든 호출 트래킹하기"
+msgstr "모든 호출 추적하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:132
 msgid ""
@@ -181,8 +181,8 @@ msgid ""
 ":attr:`~Mock.mock_calls` attribute records all calls to child attributes "
 "of the mock - and also to their children."
 msgstr ""
-"종종 메서드에 대한 단일 호출이상을 추적하려고 합니다."
-" :attr:`~Mock.mock_calls` 속성은 모든 mock의 자식 속성 또는 그들의 자식 속성에 대한 호출 기록합니다."
+"종종 메서드에 대한 단일 호출 이상을 추적하려고 합니다. "
+":attr:`~Mock.mock_calls` 속성은 모든 mock의 자식 속성 (또는 그들의 자식 속성에) 대한 호출 기록합니다."
 
 # TODO (2019. 5) assertion 해석 어색
 #: ../Doc/library/unittest.mock-examples.rst:144
@@ -193,16 +193,16 @@ msgid ""
 "also checking that they were made in the right order and with no "
 "additional calls:"
 msgstr ""
-"만약 ``mock_calls`` 에 대해 assertion 하고, 예상치 못한 메소드가 호출 된 경우, "
-"그 assertion 은 실패 합니다. 이는 예상한 호출에 대한 확인(asserting) 뿐만 아니라,"
-"올바른 순서로 추가적인 호출 없이 이루어졌는지 확인하기 때문에 유용합니다."
+"만약 ``mock_calls`` 에 대해 어써션 할때, 예상치 못한 메서드가 호출된 경우, "
+"그 어써션는 실패합니다. 이는 예상된 호출에 대한 확인뿐만 아니라, "
+"올바른 순서로 추가적인 호출 없이 이루어졌는지 확인하기 때문에 유용합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:149
 msgid ""
 "You use the :data:`call` object to construct lists for comparing with "
 "``mock_calls``:"
 msgstr ""
-"``mock_calls`` 과 비교하기 위한 리스트를 생성하기 위해 :data:`call` 객체를 사용합니다."
+"``mock_calls`` 과 비교하기 위한 리스트를 구성하기 위해 :data:`call` 객체를 사용합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:156
 msgid ""
@@ -210,12 +210,12 @@ msgid ""
 "means it is not possible to track nested calls where the parameters used "
 "to create ancestors are important:"
 msgstr ""
-"그러나 mock을 반환하는 호출에 대한 매개 변수는 기록되지 않습니다. 따라서 조상을 만드는 데 사용된"
-"매개 변수가 중요한 중첩 호출을 추적하는 것은 불가능합니다."
+"그러나 mock을 반환하는 호출에 대한 매개 변수는 기록되지 않습니다. 따라서 조상을 만드는 데 사용된 "
+"매개 변수가 중요한 중첩 호출을 추적하는 것은 불가능합니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:167
 msgid "Setting Return Values and Attributes"
-msgstr "반환 값과 속성 설정하"
+msgstr "반환 값과 속성 설정하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:169
 msgid "Setting the return values on a mock object is trivially easy:"
