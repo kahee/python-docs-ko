@@ -1076,10 +1076,10 @@ msgid ""
 "<https://twistedmatrix.com/documents/11.0.0/api/twisted.python.components.html>`_."
 " Having this applied to attributes too actually causes errors."
 msgstr ""
-"때때로 이것은 불편합니다. 예를 들어, 한 유저가 <https://code.google.com/archive/p/mock/issues/105>`_ "
-"mock 을 하위 클래스로 만들어 `Twisted 어댑터를 "
+"때때로 이것은 불편합니다. 예를 들어, `한 유저가 <https://code.google.com/archive/p/mock/issues/105>`_ "
+"mock 을 하위 클래스로 만들어 `Twisted 어댑터 "
 "<https://twistedmatrix.com/documents/11.0.0/api/twisted.python.components.html>`_. "
-"만들었습니다. 이것을 속성에 적용하면 실제로 오류가 발생합니다."
+"를 만들었습니다. 이것을 속성에 적용하면 실제로 오류가 발생합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1025
 msgid ""
@@ -1090,7 +1090,7 @@ msgid ""
 "(``**kwargs``) which are then passed onto the mock constructor:"
 msgstr ""
 "(모든 속성에서) ``Mock`` 은 ``_get_child_mock`` 호출을 이용하여, 속성과 반환 값에 대한 "
-"\"하위-mock\" 을 만듭니다. 이 메서드를 오버라이드하는 것이므로, 하위 클래스가 속성에 사용되지 않게 할 수 있습니다."
+"\"하위-mock\" 을 만듭니다. 이 메서드를 오버라이드하는 것이므로, 하위 클래스가 속성에 사용되지 않게 할 수 있습니다. "
 "서명은 임의의 키워드 인자(``**kwargs``) 를 가지고, mock 생성자로 전달 된다는 것입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1042
