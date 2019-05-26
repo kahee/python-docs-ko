@@ -184,7 +184,6 @@ msgstr ""
 "종종 메서드에 대한 단일 호출 이상을 추적하려고 합니다. "
 ":attr:`~Mock.mock_calls` 속성은 모든 mock의 자식 속성 (또는 그들의 자식 속성에) 대한 호출 기록합니다."
 
-# TODO (2019. 5) assertion 해석 어색
 #: ../Doc/library/unittest.mock-examples.rst:144
 msgid ""
 "If you make an assertion about ``mock_calls`` and any unexpected methods "
@@ -784,6 +783,7 @@ msgstr ""
 "해결 방법은 언 바운드 메서드를 대신해서 실제 메서드를 패치하는 것입니다. "
 ":func:`patch` 데코레이터는 실제 메서드를 생성하는 귀찮은 작업을 mock 으로 패치 할 수 있어서 매우 간단합니다."
 
+# TODO (2019. 5) under hood
 #: ../Doc/library/unittest.mock-examples.rst:678
 msgid ""
 "If you pass ``autospec=True`` to patch then it does the patching with a "
@@ -848,7 +848,7 @@ msgid ""
 msgstr ""
 ":data:`call` 도우미는 이러한 호출에 대한 어써션을 쉽게 만듭니다. "
 "예상되는 호출 목록을 작성하여 ``call_args_list`` 와 비교할 수 있습니다. "
-"``call_args_list``의 repr 과 매우 유사해 보입니다.:"
+"``call_args_list`` 의 repr 과 매우 유사해 보입니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:746
 msgid "Coping with mutable arguments"
