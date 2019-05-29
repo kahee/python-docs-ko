@@ -52,7 +52,7 @@ msgid ""
 "Once our mock has been used (``real.method`` in this example) it has "
 "methods and attributes that allow you to make assertions about how it has"
 " been used."
-msgstr "우선 mock (이 예제의 ``real.method``)을 사용하면 메서드와 속성이 어떻게 사용되었는지에 대해 어써션 수 있습니다."
+msgstr "우선 mock (이 예제의 ``real.method`` )을 사용하면 메서드와 속성이 어떻게 사용되었는지에 대해 어써션 수 있습니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:36
 msgid ""
@@ -101,7 +101,7 @@ msgid ""
 "The simple ``ProductionClass`` below has a ``closer`` method. If it is "
 "called with an object then it calls ``close`` on it."
 msgstr ""
-"아래의 간단한 ``ProductionClass`` 는 ``closer`` 메서드를 가지고 있습니다.이 객체와 함께 호출된 경우, "
+"아래의 간단한 ``ProductionClass`` 는 ``closer`` 메서드를 가지고 있습니다. 이 객체와 함께 호출된 경우, "
 "``close`` 를 호출합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:77
@@ -162,7 +162,7 @@ msgid ""
 "mock:"
 msgstr ""
 "mock 이름을 붙이는 것은 유용할 수 있습니다. 이름은 mock의 repr에 표시되며 테스트 실패 메시지에 mock이 표시될 때 "
-"도움이 될 수 있습니다. 또한 이름은 mock의 속성이나 메서드에도 전달됩니다.:"
+"도움이 될 수 있습니다. 또한, 이름은 mock의 속성이나 메서드에도 전달됩니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:130
 msgid "Tracking all Calls"
@@ -210,7 +210,7 @@ msgstr "반환 값과 속성 설정하기"
 
 #: ../Doc/library/unittest.mock-examples.rst:169
 msgid "Setting the return values on a mock object is trivially easy:"
-msgstr "mock 객체에서 반환 값을 설정하는 것은 쉽습니다.:"
+msgstr "mock 객체에서 반환 값을 설정하기는 쉽습니다.:"
 
 #: ../Doc/library/unittest.mock-examples.rst:176
 msgid "Of course you can do the same for methods on the mock:"
