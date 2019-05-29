@@ -903,7 +903,7 @@ msgid ""
 ":class:`MagicMock` that copies (using :func:`copy.deepcopy`) the "
 "arguments. Here's an example implementation:"
 msgstr ""
-"또 다른 방법은 인자를 (:func:`copy.deepcopy`를 사용한) 복사하여 :class:`Mock` 또는 "
+"또 다른 방법은 인자를 (:func:`copy.deepcopy` 를 사용한) 복사하여 :class:`Mock` 또는 "
 ":class:`MagicMock` 의 하위 클래스를 만드는 것입니다. 다음은 구현 예시입니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:856
@@ -1194,7 +1194,7 @@ msgid ""
 " in :attr:`~Mock.mock_calls` then the assert succeeds."
 msgstr ""
 "많은 호출이 생성되었지만, 특정 순서에만 관심있다면 :meth:`~Mock.assert_has_calls` 메서드를 사용하는 방법도"
-" 있습니다. 이것은 (호출 객체로 생성된) 호출 목록을 가지고 있습니다 해당 호출 순서가 "
+" 있습니다. 이것은 ( :data:`call` 생성된) 호출 목록을 가지고 있습니다 해당 호출 순서가 "
 ":attr:`~Mock.mock_calls` 이면, 어서트가 성공합니다."
 
 #: ../Doc/library/unittest.mock-examples.rst:1176
@@ -1294,3 +1294,4 @@ msgstr ""
 " 부터 동등 matcher (`hamcrest.library.integration.match_equality "
 "<https://pyhamcrest.readthedocs.io/en/release-1.8/integration/#module-"
 "hamcrest.library.integration.match_equality>`_) 의 형태로 비슷한 기능을 제공합니다."
+
